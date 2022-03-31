@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.159",
+    "esbuild": "^0.14.27",
+    "fast-glob": "^3.2.11",
+    "fs-extra": "^10.0.1",
+    "process": "^0.11.10",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "esbuild": "rm -rf dist/esbuild && time node esbuild.js",
+    "swc": "rm -rf dist/esbuild && time node swc.js",
+    "babel": "rm -rf dist/babel && time node babel.js"
+  }
+}
